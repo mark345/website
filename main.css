@@ -1,0 +1,187 @@
+@font-face {
+    font-family: sfnewrepublic;
+    src: url(fonts/SFNewRepublic.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sfnewrepublic;
+}
+
+#container {
+    position: relative;
+}
+
+#header {
+    display: table;
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    font-family: sfnewrepublic;
+    background-color: rgb(199,44,35);
+    z-index: 1;   
+}
+
+#logo { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 15%;
+    z-index: 2;
+}
+
+#name_cell {
+    display: table-cell;
+    width: 65%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 300%;   
+}
+
+#contact_cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 150%;
+}
+
+#color_mark_div {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 600px;  
+    background-color: black;
+}
+
+#color_mark {
+    width: 960px;
+    height: 600px;    
+    opacity: 0;
+    z-index: 1;
+}
+
+#scrollbar {
+    position: fixed;
+    top: 150px;
+    height: 100%;
+    width: 8%;
+    text-align: right;
+    background: transparent;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.navbar {
+    text-decoration: none;
+    color: black;
+    line-height: 4;
+}
+
+#nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    height: 660px;
+    position: relative;
+    top: 660px;
+    display: table;
+    width: 100%;
+}
+
+#blank {
+    top: 1200px;
+}
+
+#clothing {
+    background-color: cadetblue;
+}
+
+#books {
+    background-color: darkseagreen;
+}
+
+#cooking {
+    background-color: darksalmon;
+}
+
+#coding {
+    background-color: firebrick;
+}
+
+#furniture {
+    background-color: blueviolet;
+}
+
+.section_title {
+    position: absolute;
+    display: table-cell;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 300%;
+}
+
+#footer {
+    position: relative;
+    top: 660px;
+    background-color: rgb(199,44,35);
+    height: 75px;
+    width: 100%;
+}
+#line1_clothing_left {
+    display: inline-block;
+}
+
+#line1_clothing {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+#workbench {
+    height: 300px;
+    width: auto;
+}
+
+#line1_clothing_right {
+    display: inline-block;
+}
+
+#dresser {
+    display: inline-block;
+    height: 300px;
+    width: 500px;;
+}
+
+#line2_clothing {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+#line2_clothing_left {
+    display: inline-block;
+}
+
+#line2_clothing_right {
+    display: inline-block;
+}
+
+#workbench2 {
+    display: inline-block;
+    height: 300px;
+    width: 500px;;
+}
+
+#dresser2 {
+    display: inline-block;
+    height: 300px;
+    width: 400px;;
+}

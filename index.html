@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mark Harding</title> <!--TODO add icon to title bar-->
+        <meta charset="utf-8">
+        <meta name="description" content="insert description here"> <!--TODO update description-->
+        <meta name="keywords" content="insert description here">  <!--TODO update keywords-->
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="animations.css">
+        <link rel="stylesheet" type="text/css" href="colors.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <!--JQuery that allows the page to smoothly scroll to each section-->
+        <script>
+            $(function() {
+                $('a[href*="#"]:not([href="#"])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    
+    <body>">
+        <div id="container">
+            <div id="header">
+                <div id="name_cell">Mark Harding</div>
+                <div id="contact_cell">About Contact</div>
+            </div>
+            <img id="logo" src="images/logo.png">  
+            <div id="scrollbar">
+                <ul id="nav_ul">
+                    <li><a class="navbar" href="#clothing">Clothing</a></li>
+                    <li><a class="navbar" href="#books">Books</a></li>
+                    <li><a class="navbar" href="#cooking">Cooking</a></li>
+                    <li><a class="navbar" href="#coding">Coding</a></li>
+                    <li><a class="navbar" href="#furniture">Furniture</a></li>
+                </ul>
+            </div>
+
+            <div id="color_mark_div">
+                <img id="color_mark" class="fade_in" src="images/color_mark.jpg">
+            </div>
+
+            <div class="section" id="clothing">
+                <span class="section_title">clothing</span>
+                <div id="line1_clothing" class="line1">
+                    <div id="line1_clothing_left">
+                        <img id="workbench" src="images/workbench.jpg">
+                    </div>
+                    <div id="line1_clothing_right">
+                        <img id="dresser" src="images/dresser.jpg">
+                    </div>
+                </div>
+                <div id="line2_clothing" class="line2">
+                    <div id="line2_clothing_left">
+                        <img id="workbench2" src="images/workbench.jpg">
+                    </div>
+                    <div id="line2_clothing_right">
+                        <img id="dresser2" src="images/dresser.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="books">
+                <span class="section_title">books</span>
+            </div>
+            <div class="section" id="cooking">
+                <span class="section_title">cooking</span>
+            </div>
+            <div class="section" id="coding">
+                <span class="section_title">coding</span>
+            </div>
+            <div class="section" id="furniture">
+                <span class="section_title">furniture</span>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>

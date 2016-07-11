@@ -1,0 +1,25 @@
+/** The fadeIn keyframes and class controls the page fading in during load **/
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+    
+@-webkit-keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade_in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
