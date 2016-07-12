@@ -18,12 +18,22 @@
                         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                         if (target.length) {
                             $('html, body').animate({
-                                scrollTop: target.offset().top
+                                scrollTop: target.offset().top - 50
                             }, 1000);
                             return false;
                         }
                     }
                 });
+            });
+            
+            $( window ).scroll(function() {
+                var s = $(window).scrollTop(),
+                    d = $(document).height(),
+                    c = $(window).height();
+
+                var scrollPercent = (s / (d-c)) * 100;
+                console.log(scrollPercent);
+                $( "#scrollbar_cursor" ).css("top", scrollPercent * 3);
             });
         </script>
     </head>
@@ -43,6 +53,8 @@
                     <li><a class="navbar" href="#coding">Coding</a></li>
                     <li><a class="navbar" href="#furniture">Furniture</a></li>
                 </ul>
+                <div id="scrollbar_cursor">
+                </div>
             </div>
 
             <div id="color_mark_div">
