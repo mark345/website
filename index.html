@@ -26,6 +26,11 @@
                 });
             });
             
+            $( "#line1_clothing_left" ).mouseover(function() {
+                console.log("hi");
+                $( "#line1_clothing_left_tri" ).css("opacity", .7);
+            });
+            
             $( window ).scroll(function() {
                 var s = $(window).scrollTop(),
                     d = $(document).height(),
@@ -33,7 +38,7 @@
 
                 var scrollPercent = (s / (d-c)) * 100;
                 console.log(scrollPercent);
-                $( "#scrollbar_cursor" ).css("top", scrollPercent * 3);
+                $( "#scrollbar_cursor" ).css("top", scrollPercent * 3.1);
             });
         </script>
     </head>
@@ -65,6 +70,9 @@
                 <span class="section_title">clothing</span>
                 <div id="line1_clothing" class="line1">
                     <div id="line1_clothing_left">
+                        <div id="line1_clothing_left_border"></div>
+                        <div id="line1_clothing_left_tri"></div>
+                        <div id="line1_clothing_left_descript">workbench</div>
                         <img id="workbench" src="images/workbench.jpg">
                     </div>
                     <div id="line1_clothing_right">

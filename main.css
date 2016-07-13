@@ -146,11 +146,12 @@ html, body {
     display: inline-block;
     margin-top: 100px;
     margin-left: 150px;
+    position: relative;
 }
 
 #workbench {
     height: 300px;
-    width: auto;
+    width: 400px;    
 }
 
 #line1_clothing_right {
@@ -158,9 +159,9 @@ html, body {
 }
 
 #dresser {
-    display: inline-block;
     height: 300px;
-    width: 500px;;
+    width: 500px;
+    
 }
 
 #line2_clothing {
@@ -197,5 +198,33 @@ html, body {
     height: 10px;
     background: black;
     border-radius: 50%;
-    padding-top: <script>scrollPercent</script>px;
+}
+
+#line1_clothing_left_border {
+    border: 2px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 290px;
+    width: 390px;
+    z-index: 0.5;
+}
+
+#line1_clothing_left_tri {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 300px solid transparent;
+    border-right: 400px solid gray; 
+    opacity: .7;
+}
+
+#line1_clothing_left_descript {
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    font-size: 200%;
+    color: gainsboro;
 }
